@@ -1,0 +1,40 @@
+# ck-macopt download site. Lives in the private ck-macopt repo (scripts/release/public/) and is
+# copied to the public ck-macopt-releases repo by scripts/release/sync_public.py. Started by hand:
+# it checks the private source out and runs deploy_site.py, which publishes site/ plus the design
+# tokens to gh-pages and keeps the latest.json a release put there. It does not wait for a release.
+name: Site
+
+on:
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: "Branch or tag of ckandrinirina/ck-macopt to publish the site from"
+        required: false
+        default: main
+        type: string
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: site
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: Publish the site
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          repository: ckandrinirina/ck-macopt
+          ref: ${{ inputs.ref }}
+          ssh-key: ${{ secrets.SOURCE_DEPLOY_KEY }}
+          persist-credentials: false
+
+      - name: Publish site/ to gh-pages
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/release/deploy_site.py --repo "$GITHUB_REPOSITORY"
