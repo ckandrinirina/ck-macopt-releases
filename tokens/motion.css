@@ -1,0 +1,11 @@
+/* ck-macopt — motion. Minimal: values update in place; gauges ease gently. */
+:root {
+  --motion-fast: 120ms; /* @kind other */
+  --motion-gauge: 450ms; /* @kind other */
+  --motion-spin: 900ms; /* @kind other */
+  --motion-ease: cubic-bezier(0.25, 0.1, 0.25, 1); /* @kind other */
+  --blur-vibrancy: saturate(180%) blur(24px); /* @kind other */
+}
+@media (prefers-reduced-motion: reduce) {
+  :root { --motion-fast: 0ms; /* @kind other */ --motion-gauge: 0ms; /* @kind other */ }
+}

@@ -1,0 +1,9 @@
+/* ck-macopt — corner radii (macOS-standard, soft). */
+:root {
+  --radius-xs: 3px;    /* checkbox, chart markers */
+  --radius-sm: 5px;    /* buttons, fields, popup, segmented */
+  --radius-md: 7px;    /* sidebar items, list-row hover, badges container */
+  --radius-lg: 10px;   /* cards, tiles, banners */
+  --radius-xl: 12px;   /* popover, sheet, window */
+  --radius-full: 999px;/* pills, switch, dots, meters */
+}

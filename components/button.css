@@ -1,0 +1,27 @@
+/* ck-macopt — button */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:var(--space-3);height:var(--size-control);min-width:var(--size-control);padding:0 var(--space-6);border:0;border-radius:var(--radius-sm);font:inherit;font-size:var(--text-body);font-weight:var(--font-weight-medium);line-height:1;white-space:nowrap;cursor:default;user-select:none;transition:background-color var(--motion-fast) var(--motion-ease)}
+.btn:focus-visible,.btn.is-focus{outline:none;box-shadow:var(--shadow-focus)}
+.btn__icon{width:var(--size-icon-sm);height:var(--size-icon-sm);flex:none}
+.btn__label{overflow:hidden;text-overflow:ellipsis}
+.btn--primary{background:var(--color-accent);color:var(--color-text-on-accent)}
+.btn--primary:hover,.btn--primary.is-hover{background:var(--color-accent-hover)}
+.btn--primary:active,.btn--primary.is-pressed{background:var(--color-accent-pressed)}
+.btn--secondary{background:var(--color-bg-control);color:var(--color-text-primary);box-shadow:var(--shadow-control)}
+.btn--secondary:hover,.btn--secondary.is-hover{background:var(--color-fill-hover)}
+.btn--secondary:active,.btn--secondary.is-pressed{background:var(--color-bg-control-pressed)}
+.btn--secondary.is-focus,.btn--secondary:focus-visible{box-shadow:var(--shadow-control),var(--shadow-focus)}
+.btn--destructive{background:var(--color-destructive);color:var(--color-text-on-accent)}
+.btn--destructive:hover,.btn--destructive.is-hover{background:var(--color-destructive-hover)}
+.btn--destructive:active,.btn--destructive.is-pressed{background:var(--color-destructive-pressed)}
+.btn--borderless{background:transparent;color:var(--color-accent-text);padding:0 var(--space-3)}
+.btn--borderless:hover,.btn--borderless.is-hover{background:var(--color-fill-hover)}
+.btn--borderless:active,.btn--borderless.is-pressed{background:var(--color-fill-pressed)}
+.btn--borderless.btn--danger{color:var(--color-status-critical-text)}
+.btn--sm{height:var(--size-control-sm);padding:0 var(--space-5);font-size:var(--text-callout);gap:var(--space-2)}
+.btn--sm.btn--borderless{padding:0 var(--space-3)}
+.btn[disabled],.btn.is-disabled{background:var(--color-fill-subtle);color:var(--color-text-disabled);box-shadow:none;pointer-events:none}
+.btn--borderless[disabled],.btn--borderless.is-disabled{background:transparent}
+.btn.is-loading{pointer-events:none}
+.btn.is-loading .btn__label{opacity:.75}
+.btn-group{display:flex;flex-wrap:wrap;align-items:center;gap:var(--space-4)}
+.btn-group--end{justify-content:flex-end}

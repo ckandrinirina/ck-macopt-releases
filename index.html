@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ck-macopt · Download</title>
+<meta name="description" content="ck-macopt is a menu bar app that keeps an Intel MacBook Pro at full speed: fan control before the CPU throttles, background hog alerts, and what is using your disk.">
+<link rel="stylesheet" href="tokens/colors.css">
+<link rel="stylesheet" href="tokens/typography.css">
+<link rel="stylesheet" href="tokens/spacing.css">
+<link rel="stylesheet" href="tokens/radii.css">
+<link rel="stylesheet" href="tokens/shadows.css">
+<link rel="stylesheet" href="tokens/motion.css">
+<link rel="stylesheet" href="tokens/base.css">
+<link rel="stylesheet" href="components/button.css">
+<link rel="stylesheet" href="components/card.css">
+<link rel="stylesheet" href="site.css">
+<script type="module" src="download.js"></script>
+</head>
+<body class="ck-root">
+<header class="top"><div class="wrap">
+  <a class="brand" href="./">ck-macopt</a>
+  <nav class="nav"><a href="./" aria-current="page">Download</a><a href="about.html">About me</a><a href="https://github.com/ckandrinirina/ck-macopt-releases/releases">All releases</a></nav>
+</div></header>
+
+<main class="wrap">
+  <section class="hero">
+    <h1>ck-macopt</h1>
+    <p class="pitch">A menu bar app that keeps an Intel MacBook Pro at full speed.</p>
+    <div class="download">
+      <a class="btn btn--primary is-disabled" id="download" aria-disabled="true" tabindex="-1"><span class="btn__label" id="download-label">No release yet</span></a>
+      <p class="meta num" id="download-meta"></p>
+      <noscript><p class="meta">Turn on JavaScript to see the latest version, or get it from the <a href="https://github.com/ckandrinirina/ck-macopt-releases/releases/latest">releases page</a>.</p></noscript>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>What it does</h2>
+    <div class="card-grid">
+      <div class="card"><div class="card__body"><h3 class="feature__name">Fan control</h3><p class="feature__text">Ramps the fans before the CPU gets hot enough to throttle, from the temperature and how fast it is rising.</p></div></div>
+      <div class="card"><div class="card__body"><h3 class="feature__name">Throttle guard</h3><p class="feature__text">Briefly turns on Low Power Mode only when the CPU is about to fall towards 1.2 GHz, and turns it off once it is cool.</p></div></div>
+      <div class="card"><div class="card__body"><h3 class="feature__name">Background hogs</h3><p class="feature__text">Flags apps that sit in the background using a lot of memory or CPU. You decide whether to quit them.</p></div></div>
+      <div class="card"><div class="card__body"><h3 class="feature__name">Storage</h3><p class="feature__text">Shows what is using disk space, folder by folder.</p></div></div>
+      <div class="card"><div class="card__body"><h3 class="feature__name">Uninstall</h3><p class="feature__text">Removes an app together with its leftover files. Everything goes to the Trash, after you confirm the list.</p></div></div>
+      <div class="card"><div class="card__body"><h3 class="feature__name">Network</h3><p class="feature__text">Live download and upload speed, and a speed test.</p></div></div>
+      <div class="card"><div class="card__body"><h3 class="feature__name">GPU</h3><p class="feature__text">Tells you when the discrete GPU is in use.</p></div></div>
+      <div class="card"><div class="card__body"><h3 class="feature__name">Startup items</h3><p class="feature__text">Lists the login items and launch agents that start with your Mac.</p></div></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Made for Intel MacBook Pros</h2>
+    <div class="card"><div class="card__body">
+      <p>Fan control and the helper that does it are Intel-only, tuned on a 16-inch MacBook Pro (2019). On another Intel Mac only the sensors it finds are used. It is read-only on Apple Silicon: it shows the live stats and says that fan control is not supported.</p>
+      <p>It needs macOS 14 or later.</p>
+    </div></div>
+  </section>
+
+  <section class="section">
+    <h2>Opening it the first time</h2>
+    <div class="card"><div class="card__body">
+      <p>ck-macopt is signed with a self-signed certificate and is not notarized, so macOS asks before it opens the app. Unzip it, move <strong>ck-macopt.app</strong> to Applications, then either:</p>
+      <ol class="steps">
+        <li>Right-click the app and choose <strong>Open</strong>, then click <strong>Open</strong> again in the dialog.</li>
+        <li>Or open it once, then go to System Settings &rarr; Privacy &amp; Security, scroll to the message about ck-macopt and click <strong>Open Anyway</strong>.</li>
+      </ol>
+      <p>You only do this once. After that ck-macopt updates itself in the background.</p>
+    </div></div>
+  </section>
+</main>
+
+<footer><div class="wrap">Made by <a href="about.html">Erick Andrinirina (CK)</a> in Antananarivo, Madagascar.</div></footer>
+</body>
+</html>

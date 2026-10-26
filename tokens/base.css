@@ -1,0 +1,20 @@
+/* ck-macopt — base element rules shared by every surface. */
+.ck-root, .ck-root * { box-sizing: border-box; }
+.ck-root {
+  font-family: var(--font-ui);
+  font-size: var(--text-body);
+  line-height: var(--leading-normal);
+  color: var(--color-text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+.ck-root :where(a) { color: var(--color-accent-text); text-decoration: none; }
+.ck-root :where(a):hover { text-decoration: underline; }
+.ck-root :where(a[class]):hover { text-decoration: none; }
+.ck-root :focus-visible { outline: none; box-shadow: var(--shadow-focus); }
+.num { font-variant-numeric: var(--font-numeric); }
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.icon { width: var(--size-icon); height: var(--size-icon); flex: none; stroke-width: 1.75; }
+.icon--xs { width: var(--size-icon-xs); height: var(--size-icon-xs); }
+.icon--sm { width: var(--size-icon-sm); height: var(--size-icon-sm); }
+.icon--lg { width: var(--size-icon-lg); height: var(--size-icon-lg); }
+.icon--xl { width: var(--size-icon-xl); height: var(--size-icon-xl); stroke-width: 1.5; }

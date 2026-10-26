@@ -1,0 +1,56 @@
+/* ck-macopt — spacing + fixed sizes. */
+:root {
+  --space-0: 0;
+  --space-1: 2px;
+  --space-2: 4px;
+  --space-3: 6px;
+  --space-4: 8px;
+  --space-5: 10px;
+  --space-6: 12px;
+  --space-7: 16px;
+  --space-8: 20px;
+  --space-9: 24px;
+  --space-10: 32px;
+  --space-11: 40px;
+
+  /* control + layout sizes (click targets never below 24pt) */
+  --size-control-sm: 24px;
+  --size-control: 28px;
+  --size-row: 32px;
+  --size-row-lg: 44px;
+  --size-icon-xs: 12px;
+  --size-icon-sm: 14px;
+  --size-icon: 16px;
+  --size-icon-lg: 20px;
+  --size-icon-xl: 32px;
+  --size-app-icon: 28px;
+  --size-app-icon-lg: 48px;
+  --size-switch-w: 32px;
+  --size-switch-h: 18px;
+  --size-switch-thumb: 16px;
+  --size-checkbox: 14px;
+  --size-badge: 18px;
+  --size-dot: 8px;
+  --size-hairline: 1px;
+  --size-stroke: 1.5px;
+  --size-meter: 4px;
+  --size-meter-lg: 6px;
+  --size-gauge: 96px;
+  --size-gauge-stroke: 8px;
+  --size-marker: 2px;
+  --size-marker-h: 14px;
+  --size-chart-h: 120px;
+  --size-sparkline-h: 28px;
+  --size-menubar-h: 24px;
+  --size-traffic-light: 12px;
+  --size-popover-w: 320px;
+  --size-sidebar-w: 200px;
+  --size-window-min-w: 760px;
+  --size-window-min-h: 520px;
+  --size-titlebar-h: 52px;
+  --size-sheet-w: 300px;
+  --size-tooltip-max: 420px;
+  --size-drop-zone-h: 180px;
+  --size-size-bar-w: 120px;
+  --size-focus-ring: 3px;
+}

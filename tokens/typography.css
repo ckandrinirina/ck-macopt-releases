@@ -1,0 +1,31 @@
+/* ck-macopt — type tokens. System UI font only; tabular figures for every live number. */
+:root {
+  --font-ui: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+  --font-display: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", sans-serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, Monaco, monospace;
+  --font-numeric: tabular-nums;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --text-caption: 10px;      /* axis labels, scale labels */
+  --text-footnote: 11px;     /* meta lines, badges, sub-lines */
+  --text-callout: 12px;      /* secondary body, paths */
+  --text-body: 13px;         /* default macOS body */
+  --text-title3: 15px;       /* card titles in popover header */
+  --text-title2: 17px;       /* window section titles */
+  --text-title1: 22px;       /* panel title */
+  --text-metric: 24px;       /* metric tile numerals */
+  --text-metric-lg: 34px;    /* hero numerals (network, gauge centre) */
+  --text-menubar: 13px;      /* menu bar label */
+
+  --leading-tight: 1.15;
+  --leading-normal: 1.38;
+  --leading-relaxed: 1.5;
+
+  --tracking-tight: -0.01em;
+  --tracking-normal: 0;
+  --tracking-caps: 0.04em;
+}
